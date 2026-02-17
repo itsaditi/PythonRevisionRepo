@@ -3,8 +3,6 @@ Run with command in root dir -
 python -m datastructures.dictionary
 """
 
-print("***************** DICTIONARY *****************")
-
 """
 Dictionaries
 """

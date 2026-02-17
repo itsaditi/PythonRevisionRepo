@@ -5,7 +5,6 @@ python -m datastructures.list
 
 
 from datastructures.utils import *
-print("***************** LIST *****************")
 
 """
 List is mutable

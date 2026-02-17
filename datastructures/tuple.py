@@ -4,7 +4,6 @@ python -m datastructures.tuple
 """
 
 from datastructures.utils import *
-print("***************** TUPLE *****************")
 
 """
 Tuples - items in tuples cannot be modified
