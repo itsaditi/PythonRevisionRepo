@@ -18,3 +18,5 @@ from datastructures.queue import *
 print("***************** STACK *****************")
 from datastructures.stack import *
 
+print("***************** SET *****************")
+from datastructures.set import *
