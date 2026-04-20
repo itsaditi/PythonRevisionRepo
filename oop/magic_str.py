@@ -1,5 +1,8 @@
 # Using the __str__ and __repr__ magic methods
 
+# str() returns a string representation of an object for end-users, 
+# while repr() returns a string representation primarily intended for developers.
+
 class Book:
     def __init__(self, title, author, price):
         super().__init__()
@@ -7,11 +10,11 @@ class Book:
         self.author = author
         self.price = price
 
-    # TODO: use the __str__ method to return a string
+    # use the __str__ method to return a string
     def __str__(self):
         return f"{self.title} by {self.author}, costs {self.price}"
 
-    # TODO: use the __repr__ method to return an obj representation
+    # use the __repr__ method to return an obj representation
     def __repr__(self):
         return f"title = {self.title}, author = {self.author}, price = {self.price}"
 
