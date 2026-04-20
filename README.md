@@ -117,6 +117,24 @@ Abstract Base Classes (ABCs) in Python serve as a design pattern for creating te
 * Instance Prevention: Consumers are restricted from creating instances of the base class itself, as its purpose is solely to serve as a blueprint or a collection of common attributes.
 * Method Enforcement: ABCs allow developers to enforce a constraint that specific methods defined in the base class must be implemented by any inheriting subclasses.
 
+### Multiple Inheritance
+
+[multiple_inheritance.py](./oop/multiple_inheritance.py)
+
+Multiple Inheritance - Classes that can inherit more than one base class
+
+In Python, the Method Resolution Order (MRO) determines the hierarchy the interpreter follows to look up methods or attributes in a class.
+
+#### Key Principles of MRO
+* Search Direction: The lookup begins in the current class. If the attribute is not found, Python searches the parent classes in the order they are defined (from left to right).
+* Order Sensitivity: Changing the order of superclasses in the class definition directly alters the resolution order. For example, if class C inherits from (A, B), A is searched before B.
+* Inspection: You can view a class's specific lookup sequence by accessing the __mro__ attribute.
+* The Root Class: All resolution orders eventually end at the base object class, which is the superclass for every object in Python.
+
+#### Practical Application
+* Complexity: Multiple inheritance can become complex, which is why it is used sparingly in professional projects.
+* Use Case: One specific area where multiple inheritance is highly valuable is in the implementation of interfaces.
+
 # Naming conventions 
 
 ## Underscores in Naming Conventions
