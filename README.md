@@ -195,7 +195,9 @@ Python's "magic" methods are a predefined set of methods that the language autom
 
 * Note - Python doesn't do an attribute by attribute comparison on objects. It just compares two different instances to each other and sees that they're not the same object in memory and therefore they're not the same. 
 
+### Attribute Access
 
+[magic_attr.py](./oop/magic_attr.py)
 
 
 # Naming conventions 
