@@ -199,6 +199,10 @@ Python's "magic" methods are a predefined set of methods that the language autom
 
 [magic_attr.py](./oop/magic_attr.py)
 
+### Callable Objects
+
+[magic_call.py](./oop/magic_call.py)
+
 
 # Naming conventions 
 
