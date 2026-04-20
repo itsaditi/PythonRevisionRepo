@@ -105,11 +105,11 @@ Inheritance allows a class (child class) to acquire properties and methods of an
   * Access Class Attributes
   * Use static method to access a singleton object
 
-### Inheritance
+## Inheritance
 
 [inheritance.py](./oop/inheritance.py)
 
-### Abstract Base Class
+## Abstract Base Class
 
 [abstract_class.py](./oop/abstract_class.py)
 
@@ -117,7 +117,7 @@ Abstract Base Classes (ABCs) in Python serve as a design pattern for creating te
 * Instance Prevention: Consumers are restricted from creating instances of the base class itself, as its purpose is solely to serve as a blueprint or a collection of common attributes.
 * Method Enforcement: ABCs allow developers to enforce a constraint that specific methods defined in the base class must be implemented by any inheriting subclasses.
 
-### Multiple Inheritance
+## Multiple Inheritance
 
 [multiple_inheritance.py](./oop/multiple_inheritance.py)
 
@@ -135,7 +135,7 @@ In Python, the Method Resolution Order (MRO) determines the hierarchy the interp
 * Complexity: Multiple inheritance can become complex, which is why it is used sparingly in professional projects.
 * Use Case: One specific area where multiple inheritance is highly valuable is in the implementation of interfaces.
 
-### Interface
+## Interface
 
 [interface](./oop/interface.py)
 
@@ -155,7 +155,7 @@ In Python, interfaces can be implemented by combining multiple inheritance and a
 * Flexibility: You can grant existing classes new capabilities without modifying their original base classes.
 * Clarity: Interfaces are highly effective for declaring that a class possesses a specific, reliable capability.
 
-### Composition
+## Composition
 
 While inheritance creates hierarchies based on an "is-a" relationship, composition allows for the creation of complex objects by combining simpler ones, establishing a "has-a" relationship.
 
@@ -170,6 +170,31 @@ While inheritance creates hierarchies based on an "is-a" relationship, compositi
 * De-monolithing: It breaks down large, "monolithic" classes into smaller, distinct entities, making the code more manageable.
 * Separation of Responsibilities: Each class becomes responsible for its own features. For example, the Author class handles name formatting while the Book class manages overall structure.
 * Flexibility and Extensibility: Extracted classes can be reused across different parts of a program or modified independently without altering the main object’s base logic.
+
+##  Magic Methods
+
+Python's "magic" methods are a predefined set of methods that the language automatically associates with every class definition. By overriding these methods, developers can customize a wide range of behaviors to make custom objects act like built-in Python classes.
+
+#### Key Capabilities of Magic Methods
+* String Representation: You can customize how objects appear as strings, both for end-user display and for debugging.
+* Attribute Control: Magic methods allow you to manage how object attributes are accessed, including when they are retrieved or modified.
+* Expression Support: You can add capabilities that allow objects to be used in expressions, such as testing for equality ($==$) or other comparison operations like greater than ($>$) or less than ($<$).
+* Callable Objects: You can make an object "callable" like a function, which often results in more concise and readable code.
+
+#### Practical Value
+* Customization: These methods provide a way to deeply customize class behavior beyond standard methods.
+* Flexibility and Power: Leveraging these features is a core part of what gives Python its characteristic flexibility and programming power.
+
+### String Representation
+
+[magic_str.py](./oop/magic_str.py)
+
+### Equality and comparison
+
+
+
+
+
 
 # Naming conventions 
 
