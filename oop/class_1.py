@@ -1,5 +1,5 @@
 """
-python3 class_1.py
+python3 oop/class_1.py
 """
 
 # Basic class definition
