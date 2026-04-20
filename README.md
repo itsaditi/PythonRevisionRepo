@@ -135,6 +135,42 @@ In Python, the Method Resolution Order (MRO) determines the hierarchy the interp
 * Complexity: Multiple inheritance can become complex, which is why it is used sparingly in professional projects.
 * Use Case: One specific area where multiple inheritance is highly valuable is in the implementation of interfaces.
 
+### Interface
+
+[interface](./oop/interface.py)
+
+In Python, interfaces can be implemented by combining multiple inheritance and abstract base classes (ABCs). While Python lacks explicit built-in language support for interfaces—unlike C# or Java—it is flexible enough to replicate the pattern.
+
+#### Defining an Interface
+* The Promise: An interface acts as a contract or promise that a class will provide specific behaviors or capabilities.
+* Abstract Base Classes: To create an interface, you define a class that inherits from ABC and includes abstract methods using the @abstractmethod decorator.
+* No Implementation: These interface methods remain empty; they define the name and requirement of a capability without providing the actual logic.
+
+#### Implementing and Enforcing the Interface
+* Multiple Inheritance: You can add the interface class (e.g., JSONify) to a subclass's inheritance list alongside its primary base class.
+* Enforcement: Once a class inherits from an interface, it must override and implement the abstract methods. Failing to do so results in a runtime error when attempting to instantiate the class.
+* Scalability: This approach avoids code duplication. Instead of adding a function like toJSON to every individual base class, you can apply the focused interface class anywhere the capability is needed.
+
+#### Practical Benefits
+* Flexibility: You can grant existing classes new capabilities without modifying their original base classes.
+* Clarity: Interfaces are highly effective for declaring that a class possesses a specific, reliable capability.
+
+### Composition
+
+While inheritance creates hierarchies based on an "is-a" relationship, composition allows for the creation of complex objects by combining simpler ones, establishing a "has-a" relationship.
+
+#### Inheritance vs. Composition
+* Inheritance ("Is-a"): A subclass inherits all attributes and methods from a base class (e.g., a "Book" is a type of "Publication").
+* Composition ("Has-a"): An object is built using other objects as components (e.g., a "Book" has an "Author" and has "Chapters").
+* Combination: These concepts are not mutually exclusive; developers often use both to meet specific application needs.
+
+![image](./assets/Screenshot%202026-04-19%20at%209.12.25 PM.png)
+
+#### Benefits of Using Composition
+* De-monolithing: It breaks down large, "monolithic" classes into smaller, distinct entities, making the code more manageable.
+* Separation of Responsibilities: Each class becomes responsible for its own features. For example, the Author class handles name formatting while the Book class manages overall structure.
+* Flexibility and Extensibility: Extracted classes can be reused across different parts of a program or modified independently without altering the main object’s base logic.
+
 # Naming conventions 
 
 ## Underscores in Naming Conventions
