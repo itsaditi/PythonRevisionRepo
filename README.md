@@ -203,6 +203,9 @@ Python's "magic" methods are a predefined set of methods that the language autom
 
 [magic_call.py](./oop/magic_call.py)
 
+## Data classes
+
+Available in Python>= 3.7
 
 # Naming conventions 
 
