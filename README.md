@@ -207,6 +207,9 @@ Python's "magic" methods are a predefined set of methods that the language autom
 
 Available in Python>= 3.7
 
+* [dataclass.py](./oop/dataclass.py)
+* [postinit.py](./oop/postinit.py)
+
 # Naming conventions 
 
 ## Underscores in Naming Conventions
