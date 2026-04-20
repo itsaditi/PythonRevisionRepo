@@ -86,7 +86,9 @@ Inheritance allows a class (child class) to acquire properties and methods of an
 
 ## Basic
 
-* [class_1](./oop/class_1.py)
+### Class
+
+* [class_1.py](./oop/class_1.py)
   * Basic class definition
   * Class level attributes
   * Initializer function like constructor in Java
@@ -95,7 +97,7 @@ Inheritance allows a class (child class) to acquire properties and methods of an
   * `type` function to inspect object type
   * `isinstance` to compare a specific instance to a known type
   * In python, every object is a subclass of the built-in object class
-* [class_2](./oop/class_2.py)
+* [class_2.py](./oop/class_2.py)
   * Class level attributes
   * double underscore properties are hidden from other class
   * Class Methods
@@ -103,7 +105,17 @@ Inheritance allows a class (child class) to acquire properties and methods of an
   * Access Class Attributes
   * Use static method to access a singleton object
 
+### Inheritance
 
+[inheritance.py](./oop/inheritance.py)
+
+### Abstract Base Class
+
+[abstract_class.py](./oop/abstract_class.py)
+
+Abstract Base Classes (ABCs) in Python serve as a design pattern for creating templates or blueprints for other classes to inherit from, characterized by two primary constraints:
+* Instance Prevention: Consumers are restricted from creating instances of the base class itself, as its purpose is solely to serve as a blueprint or a collection of common attributes.
+* Method Enforcement: ABCs allow developers to enforce a constraint that specific methods defined in the base class must be implemented by any inheriting subclasses.
 
 # Naming conventions 
 
